@@ -1,0 +1,304 @@
+{
+ "study": {
+  "planning_area": "TENGAH",
+  "price_base": "1Q2026",
+  "programme_start": "2027-04",
+  "block_budget_first_fy": 2027,
+  "block_budget_years": 5
+ },
+ "flows": {
+  "parcels_with_flow": 105,
+  "residential_gfa_m2": 5218525.308,
+  "nonres_gfa_m2": 2067857.452,
+  "homes": 42000.0,
+  "implied_gfa_per_home_m2": 124.250603,
+  "population": 147000.0,
+  "blended_lpcd": 235.714286,
+  "adwf_m3d": 39856.957632,
+  "adwf_res_m3d": 34650.0,
+  "adwf_nonres_m3d": 5206.957632,
+  "nonres_share": 0.130641,
+  "peak_ls": 1383.92214,
+  "by_subzone": {
+   "PARK": {
+    "homes": 11415.045421,
+    "adwf_res_m3d": 9417.412473,
+    "adwf_nonres_m3d": 1061.909469,
+    "adwf_m3d": 10479.321942,
+    "parcels": 20
+   },
+   "FOREST HILL": {
+    "homes": 6846.242854,
+    "adwf_res_m3d": 5648.150355,
+    "adwf_nonres_m3d": 249.709858,
+    "adwf_m3d": 5897.860212,
+    "parcels": 16
+   },
+   "TENGAH INDUSTRIAL ESTATE": {
+    "homes": 0.0,
+    "adwf_res_m3d": 0.0,
+    "adwf_nonres_m3d": 2857.259786,
+    "adwf_m3d": 2857.259786,
+    "parcels": 18
+   },
+   "GARDEN": {
+    "homes": 6980.638597,
+    "adwf_res_m3d": 5759.026842,
+    "adwf_nonres_m3d": 313.224817,
+    "adwf_m3d": 6072.25166,
+    "parcels": 14
+   },
+   "PLANTATION": {
+    "homes": 9495.490304,
+    "adwf_res_m3d": 7833.779501,
+    "adwf_nonres_m3d": 360.6035,
+    "adwf_m3d": 8194.383001,
+    "parcels": 15
+   },
+   "BRICKLAND": {
+    "homes": 7262.582823,
+    "adwf_res_m3d": 5991.630829,
+    "adwf_nonres_m3d": 364.250201,
+    "adwf_m3d": 6355.881031,
+    "parcels": 22
+   }
+  },
+  "by_class_m3d": {
+   "residential": 34650.0,
+   "institutional": 1365.920384,
+   "commercial": 1189.441418,
+   "industrial_b2": 2319.279534,
+   "transport": 332.316296
+  }
+ },
+ "household_size_observed": 3.06,
+ "network": {
+  "reaches": 105,
+  "length_m": 21825.52,
+  "manholes": 242,
+  "adwf_outlet_m3d": 39856.957632,
+  "peak_outlet_ls": 1383.92214,
+  "outlet_d_mm": 1350,
+  "max_invert_depth_m": 21.464561,
+  "jacking_m": 8602.44,
+  "open_cut_m": 13223.08,
+  "all_depth_ok": true,
+  "reaches_not_self_cleansing": 12,
+  "length_not_self_cleansing_m": 3071.74,
+  "mean_invert_depth_m": 6.477863,
+  "budget_central": 163921612.126927,
+  "trunk_m": 5167.81,
+  "branch_m": 16657.71,
+  "d_min_mm": 200,
+  "d_max_mm": 1350,
+  "v_min": 0.33836,
+  "v_max": 1.199023,
+  "v_adwf_min": 0.242203,
+  "v_at_cop_target_m": 0,
+  "slope_steepest_one_in": 100.0,
+  "slope_flattest_one_in": 1417.552843,
+  "governs": {
+   "maximum grade (not self-cleansing)": 12,
+   "self-cleansing velocity": 32,
+   "depth limit": 61
+  },
+  "snap_median_m": 112.363428,
+  "snap_max_m": 1500.309475,
+  "snap_over_200m": 25,
+  "road_graph_m": 42649.3,
+  "road_graph_all_m": 43008.1,
+  "road_components": 3,
+  "osm_timestamp": "2026-11-14T08:05:01Z",
+  "outlet_xy": [
+   15866.1,
+   37882.6
+  ],
+  "outlet_own_adwf_m3d": 917.622395,
+  "parcels_at_outlet": 5,
+  "main_trunk": [
+   "R004",
+   "R006",
+   "R010",
+   "R012",
+   "R013",
+   "R023",
+   "R027",
+   "R028",
+   "R030",
+   "R033",
+   "R035",
+   "R044",
+   "R057",
+   "R075",
+   "R084",
+   "R097",
+   "R098",
+   "R100",
+   "R101",
+   "R103",
+   "R104"
+  ],
+  "main_trunk_m": 3432.25,
+  "length_by_d_mm": {
+   "200": 4266.72,
+   "225": 652.61,
+   "300": 6004.32,
+   "375": 3613.84,
+   "450": 1347.05,
+   "525": 773.17,
+   "600": 1360.7,
+   "750": 1891.99,
+   "900": 1073.76,
+   "1050": 499.82,
+   "1350": 341.54
+  }
+ },
+ "cost": {
+  "escalation": 1.197267,
+  "oncosts_gebiz": {
+   "low": 0.020605,
+   "central": 0.022168,
+   "high": 0.023806,
+   "ac_min": 0.002035,
+   "ac_max": 0.005236,
+   "monitoring": 0.01857
+  },
+  "budget": {
+   "low": {
+    "direct": 76425856.87113,
+    "preliminaries": 7642585.687113,
+    "contract": 84068442.558243,
+    "contingency": 8406844.255824,
+    "pes_fee": 4203422.127912,
+    "ac_and_monitoring": 1732226.578962,
+    "budget": 98410935.520942
+   },
+   "central": {
+    "direct": 109463999.701722,
+    "preliminaries": 16419599.955258,
+    "contract": 125883599.65698,
+    "contingency": 25176719.931396,
+    "pes_fee": 10070687.972558,
+    "ac_and_monitoring": 2790604.565993,
+    "budget": 163921612.126927
+   },
+   "high": {
+    "direct": 155068477.466576,
+    "preliminaries": 31013695.493315,
+    "contract": 186082172.959891,
+    "contingency": 55824651.887967,
+    "pes_fee": 22329860.755187,
+    "ac_and_monitoring": 4429912.528238,
+    "budget": 268666598.131283
+   }
+  },
+  "budget_per_m": {
+   "low": 4508.98469,
+   "central": 7510.547842,
+   "high": 12309.74557
+  },
+  "range_low_pct": -0.399646,
+  "range_high_pct": 0.638994,
+  "jacking_share_of_direct": 0.733979,
+  "benchmarks": [
+   {
+    "id": "HSL-PPB-C3",
+    "description": "PUB, Sewerage Scheme to Serve Pulau Punggol Barat Contract 3 - pumping mains and pipe bridge: DN800 ductile iron, 690 m open cut + 770 m pipe bridge + 680 m pipe jacking",
+    "value": 28680000,
+    "currency": "SGD",
+    "length_m": 2140,
+    "year": 2021,
+    "basis": "Award value: GeBIZ PUB000ETT21000021 (8 Jul 2021). Lengths: contractor's project page, hsl.com.sg. Pumping main with a bridge, not a gravity sewer",
+    "sgd": 28680000.0,
+    "sgd_per_m": 13401.869159
+   },
+   {
+    "id": "LTA-ZUBLIN-2015",
+    "description": "LTA sewer diversion contract, two lots: 9.8 km of pipe-jacked sewers, 300 mm to 3.1 m diameter, 112 shafts",
+    "value": 85000000,
+    "currency": "EUR",
+    "length_m": 9800,
+    "year": 2015,
+    "basis": "The Construction Index, 27 Aug 2015. Trade-press report of the contractor's announcement",
+    "sgd": 131750000.0,
+    "sgd_per_m": 13443.877551
+   }
+  ],
+  "jacking_norm_contract_per_m": {
+   "low": 4106.666667,
+   "high": 30968.0,
+   "central_d750": 10710.333333
+  },
+  "gebiz_packages": {
+   "count": 20,
+   "min": 870000.0,
+   "median": 21098635.0,
+   "max": 116920038.0,
+   "total": 546897399.0,
+   "first_year": 2021,
+   "last_year": 2026
+  }
+ },
+ "programme": {
+  "planning_months": 6,
+  "funding_months": 8,
+  "funding_route": "above S$100 million: Development Planning Committee approval",
+  "funding_approved": "2028-06",
+  "first_sewer_ready": "2033-01",
+  "last_sewer_ready": "2038-01",
+  "min_lead_time_months": 50,
+  "packages_late": 0,
+  "min_float_months": 6,
+  "fy_constant": {
+   "2027": 0.0,
+   "2028": 0.0,
+   "2029": 1237714.018181,
+   "2030": 4604426.710842,
+   "2031": 37577789.38574,
+   "2032": 43252140.491982,
+   "2033": 29196912.127966,
+   "2034": 26872761.981814,
+   "2035": 9459296.330339,
+   "2036": 2865329.858359,
+   "2037": 8606615.145009,
+   "2038": 248626.076695
+  },
+  "fy_outturn": {
+   "2027": 0.0,
+   "2028": 0.0,
+   "2029": 1384482.063974,
+   "2030": 5311342.169466,
+   "2031": 44500523.357958,
+   "2032": 52524544.24153,
+   "2033": 36574929.72461,
+   "2034": 34658636.154581,
+   "2035": 12516237.084212,
+   "2036": 3961441.153526,
+   "2037": 12075040.193274,
+   "2038": 364217.517017
+  },
+  "block_years": [
+   2027,
+   2028,
+   2029,
+   2030,
+   2031
+  ],
+  "block_constant": 43419930.114764,
+  "block_outturn": 51196347.591398,
+  "total_constant": 163921612.126927,
+  "total_outturn": 203871393.660147,
+  "block_share": 0.264882,
+  "peak_fy": 2032,
+  "peak_fy_constant": 43252140.491982
+ },
+ "receiving_sewer": {
+  "ultimate_peak_ls": 1383.92214,
+  "smallest_adequate_d_mm": {
+   "0.0": 1500,
+   "0.25": 1500,
+   "0.5": 2100,
+   "0.75": null
+  }
+ }
+}

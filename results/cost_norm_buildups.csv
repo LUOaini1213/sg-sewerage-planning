@@ -1,0 +1,136 @@
+item,d_mm,invert_depth_m,level,component,sgd
+"open cut, per m",300,3.0,low,excavation,142.55
+"open cut, per m",300,3.0,low,disposal,21.93
+"open cut, per m",300,3.0,low,shoring,381.6
+"open cut, per m",300,3.0,low,bedding,57.67
+"open cut, per m",300,3.0,low,pipe,156.0
+"open cut, per m",300,3.0,low,backfill,27.46
+"open cut, per m",300,3.0,low,reinstatement,156.8
+"open cut, per m",300,3.0,low,direct,944.0
+"manhole, each",300,3.0,low,concrete,1213.48
+"manhole, each",300,3.0,low,rebar,1785.88
+"manhole, each",300,3.0,low,formwork,2337.4
+"manhole, each",300,3.0,low,lining,1108.8
+"manhole, each",300,3.0,low,excavation_and_support,3583.77
+"manhole, each",300,3.0,low,fitout,2500.0
+"manhole, each",300,3.0,low,direct,12529.34
+"open cut, per m",300,3.0,central,excavation,142.55
+"open cut, per m",300,3.0,central,disposal,33.63
+"open cut, per m",300,3.0,central,shoring,636.0
+"open cut, per m",300,3.0,central,bedding,59.26
+"open cut, per m",300,3.0,central,pipe,214.5
+"open cut, per m",300,3.0,central,backfill,41.19
+"open cut, per m",300,3.0,central,reinstatement,235.2
+"open cut, per m",300,3.0,central,direct,1362.32
+"manhole, each",300,3.0,central,concrete,1236.38
+"manhole, each",300,3.0,central,rebar,1831.68
+"manhole, each",300,3.0,central,formwork,2337.4
+"manhole, each",300,3.0,central,lining,1584.0
+"manhole, each",300,3.0,central,excavation_and_support,5103.63
+"manhole, each",300,3.0,central,fitout,2500.0
+"manhole, each",300,3.0,central,direct,14593.09
+"open cut, per m",300,3.0,high,excavation,142.55
+"open cut, per m",300,3.0,high,disposal,57.02
+"open cut, per m",300,3.0,high,shoring,1017.6
+"open cut, per m",300,3.0,high,bedding,60.86
+"open cut, per m",300,3.0,high,pipe,292.5
+"open cut, per m",300,3.0,high,backfill,68.65
+"open cut, per m",300,3.0,high,reinstatement,352.8
+"open cut, per m",300,3.0,high,direct,1991.97
+"manhole, each",300,3.0,high,concrete,1259.28
+"manhole, each",300,3.0,high,rebar,1877.47
+"manhole, each",300,3.0,high,formwork,2337.4
+"manhole, each",300,3.0,high,lining,2376.0
+"manhole, each",300,3.0,high,excavation_and_support,7336.3
+"manhole, each",300,3.0,high,fitout,2500.0
+"manhole, each",300,3.0,high,direct,17686.44
+"open cut, per m",600,4.0,low,excavation,345.98
+"open cut, per m",600,4.0,low,disposal,39.92
+"open cut, per m",600,4.0,low,shoring,1010.4
+"open cut, per m",600,4.0,low,bedding,93.92
+"open cut, per m",600,4.0,low,pipe,384.0
+"open cut, per m",600,4.0,low,backfill,48.16
+"open cut, per m",600,4.0,low,reinstatement,185.6
+"open cut, per m",600,4.0,low,direct,2107.98
+"manhole, each",600,4.0,low,concrete,1489.51
+"manhole, each",600,4.0,low,rebar,2192.12
+"manhole, each",600,4.0,low,formwork,3045.7
+"manhole, each",600,4.0,low,lining,1444.8
+"manhole, each",600,4.0,low,excavation_and_support,4633.26
+"manhole, each",600,4.0,low,fitout,2500.0
+"manhole, each",600,4.0,low,direct,15305.4
+"open cut, per m",600,4.0,central,excavation,345.98
+"open cut, per m",600,4.0,central,disposal,61.21
+"open cut, per m",600,4.0,central,shoring,1684.0
+"open cut, per m",600,4.0,central,bedding,96.52
+"open cut, per m",600,4.0,central,pipe,528.0
+"open cut, per m",600,4.0,central,backfill,72.24
+"open cut, per m",600,4.0,central,reinstatement,278.4
+"open cut, per m",600,4.0,central,direct,3066.35
+"manhole, each",600,4.0,central,concrete,1517.62
+"manhole, each",600,4.0,central,rebar,2248.32
+"manhole, each",600,4.0,central,formwork,3045.7
+"manhole, each",600,4.0,central,lining,2064.0
+"manhole, each",600,4.0,central,excavation_and_support,6611.31
+"manhole, each",600,4.0,central,fitout,2500.0
+"manhole, each",600,4.0,central,direct,17986.96
+"open cut, per m",600,4.0,high,excavation,345.98
+"open cut, per m",600,4.0,high,disposal,103.79
+"open cut, per m",600,4.0,high,shoring,2694.4
+"open cut, per m",600,4.0,high,bedding,99.12
+"open cut, per m",600,4.0,high,pipe,720.0
+"open cut, per m",600,4.0,high,backfill,120.41
+"open cut, per m",600,4.0,high,reinstatement,417.6
+"open cut, per m",600,4.0,high,direct,4501.3
+"manhole, each",600,4.0,high,concrete,1545.72
+"manhole, each",600,4.0,high,rebar,2304.53
+"manhole, each",600,4.0,high,formwork,3045.7
+"manhole, each",600,4.0,high,lining,3096.0
+"manhole, each",600,4.0,high,excavation_and_support,9518.16
+"manhole, each",600,4.0,high,fitout,2500.0
+"manhole, each",600,4.0,high,direct,22010.12
+"open cut, per m",1200,5.0,low,excavation,669.32
+"open cut, per m",1200,5.0,low,disposal,77.23
+"open cut, per m",1200,5.0,low,shoring,1264.8
+"open cut, per m",1200,5.0,low,bedding,178.17
+"open cut, per m",1200,5.0,low,pipe,1056.0
+"open cut, per m",1200,5.0,low,backfill,84.89
+"open cut, per m",1200,5.0,low,reinstatement,243.2
+"open cut, per m",1200,5.0,low,direct,3573.61
+"manhole, each",1200,5.0,low,concrete,2622.19
+"manhole, each",1200,5.0,low,rebar,3859.07
+"manhole, each",1200,5.0,low,formwork,5307.39
+"manhole, each",1200,5.0,low,lining,2671.2
+"manhole, each",1200,5.0,low,excavation_and_support,7556.25
+"manhole, each",1200,5.0,low,fitout,3750.0
+"manhole, each",1200,5.0,low,direct,25766.1
+"open cut, per m",1200,5.0,central,excavation,669.32
+"open cut, per m",1200,5.0,central,disposal,118.42
+"open cut, per m",1200,5.0,central,shoring,2108.0
+"open cut, per m",1200,5.0,central,bedding,183.1
+"open cut, per m",1200,5.0,central,pipe,1452.0
+"open cut, per m",1200,5.0,central,backfill,127.33
+"open cut, per m",1200,5.0,central,reinstatement,364.8
+"open cut, per m",1200,5.0,central,direct,5022.97
+"manhole, each",1200,5.0,central,concrete,2671.66
+"manhole, each",1200,5.0,central,rebar,3958.02
+"manhole, each",1200,5.0,central,formwork,5307.39
+"manhole, each",1200,5.0,central,lining,3816.0
+"manhole, each",1200,5.0,central,excavation_and_support,10573.69
+"manhole, each",1200,5.0,central,fitout,3750.0
+"manhole, each",1200,5.0,central,direct,30076.77
+"open cut, per m",1200,5.0,high,excavation,669.32
+"open cut, per m",1200,5.0,high,disposal,200.8
+"open cut, per m",1200,5.0,high,shoring,3372.8
+"open cut, per m",1200,5.0,high,bedding,188.03
+"open cut, per m",1200,5.0,high,pipe,1980.0
+"open cut, per m",1200,5.0,high,backfill,212.22
+"open cut, per m",1200,5.0,high,reinstatement,547.2
+"open cut, per m",1200,5.0,high,direct,7170.37
+"manhole, each",1200,5.0,high,concrete,2721.14
+"manhole, each",1200,5.0,high,rebar,4056.97
+"manhole, each",1200,5.0,high,formwork,5307.39
+"manhole, each",1200,5.0,high,lining,5724.0
+"manhole, each",1200,5.0,high,excavation_and_support,14990.34
+"manhole, each",1200,5.0,high,fitout,3750.0
+"manhole, each",1200,5.0,high,direct,36549.84

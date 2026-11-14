@@ -1,0 +1,351 @@
+{
+ "date": "2026-11-14",
+ "baseline": "......................................................                   [100%]",
+ "baseline_without_snapshot": "....................................................                     [100%]",
+ "tests_collected": 54,
+ "total": 30,
+ "killed": 29,
+ "killed_without_snapshot": 29,
+ "survivors": [
+  "M15"
+ ],
+ "survivors_without_snapshot": [
+  "M15"
+ ],
+ "equivalent": {
+  "M15": "equivalent on a gravity tree: flow only accumulates downstream and size_reach never picks a smaller pipe for more flow (tests/test_hydraulics.py::test_size_reach_never_picks_a_smaller_pipe_for_more_flow), so the carry-down guard never binds"
+ },
+ "survivors_not_explained": [],
+ "mutants": [
+  {
+   "id": "M01",
+   "file": "sgsewer/hydraulics.py",
+   "what": "flow area: plus instead of minus sin(theta)",
+   "original": "return d * d / 8.0 * (t - math.sin(t))",
+   "mutated": "return d * d / 8.0 * (t + math.sin(t))",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M02",
+   "file": "sgsewer/hydraulics.py",
+   "what": "wetted perimeter doubled",
+   "original": "return d * theta(r) / 2.0",
+   "mutated": "return d * theta(r)",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M03",
+   "file": "sgsewer/hydraulics.py",
+   "what": "Manning: R^(1/2) instead of R^(2/3)",
+   "original": "** (2.0 / 3.0) * math.sqrt(slope) / n",
+   "mutated": "** (1.0 / 2.0) * math.sqrt(slope) / n",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M04",
+   "file": "sgsewer/hydraulics.py",
+   "what": "a 1.0 m pipe gets the two-thirds-bore limit",
+   "original": "if d <= hp[\"large_pipe_above_m\"][\"value\"]:",
+   "mutated": "if d < hp[\"large_pipe_above_m\"][\"value\"]:",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M05",
+   "file": "sgsewer/hydraulics.py",
+   "what": "diameter chosen against 2.4 m/s instead of the design ceiling",
+   "original": "if v_lim > v_ceiling:",
+   "mutated": "if v_lim > v_max:",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M06",
+   "file": "sgsewer/hydraulics.py",
+   "what": "self-cleansing velocity never enforced",
+   "original": "if v_lim >= v_min:",
+   "mutated": "if v_lim >= 0.0:",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M07",
+   "file": "sgsewer/hydraulics.py",
+   "what": "slope for a given depth: square forgotten",
+   "original": "return (q * n / (a * hydraulic_radius(d, r) ** (2.0 / 3.0))) ** 2",
+   "mutated": "return (q * n / (a * hydraulic_radius(d, r) ** (2.0 / 3.0)))",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M08",
+   "file": "sgsewer/flows.py",
+   "what": "public and private per-capita flows swapped",
+   "original": "return (pub * fc[\"lpcd_public\"][\"value\"] + prv * fc[\"lpcd_private\"][\"value\"]) / (pub + prv)",
+   "mutated": "return (pub * fc[\"lpcd_private\"][\"value\"] + prv * fc[\"lpcd_public\"][\"value\"]) / (pub + prv)",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M09",
+   "file": "sgsewer/flows.py",
+   "what": "return factor dropped from non-residential flow",
+   "original": "return water_m3_per_m2_year * 1000.0 / 365.0 * return_factor",
+   "mutated": "return water_m3_per_m2_year * 1000.0 / 365.0",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M10",
+   "file": "sgsewer/flows.py",
+   "what": "commercial share of mixed parcels taken as the residential share",
+   "original": "nonres_gfa = p[\"area_m2\"] * pr * (1.0 - share)",
+   "mutated": "nonres_gfa = p[\"area_m2\"] * pr * share",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M11",
+   "file": "sgsewer/flows.py",
+   "what": "peak factor dropped from parcel peak flow",
+   "original": "r[\"peak_ls\"] = fc[\"peak_factor\"][\"value\"] * r[\"adwf_m3d\"] * 1000.0 / DAY_S",
+   "mutated": "r[\"peak_ls\"] = r[\"adwf_m3d\"] * 1000.0 / DAY_S",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M12",
+   "file": "sgsewer/network.py",
+   "what": "upstream flow overwrites instead of adding",
+   "original": "dn[\"adwf_by_subzone\"][s] = dn[\"adwf_by_subzone\"].get(s, 0.0) + v",
+   "mutated": "dn[\"adwf_by_subzone\"][s] = v",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M13",
+   "file": "sgsewer/network.py",
+   "what": "outgoing sewer set above the incoming ones",
+   "original": "soffit_up = max([cover] + [u[\"soffit_down_m\"] for u in ups])",
+   "mutated": "soffit_up = min([cover] + [u[\"soffit_down_m\"] for u in ups])",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M14",
+   "file": "sgsewer/network.py",
+   "what": "manhole count rounded down: spacing over 120 m",
+   "original": "\"manholes\": max(1, math.ceil(r[\"length_m\"] / spacing - 1e-9)),",
+   "mutated": "\"manholes\": max(1, math.floor(r[\"length_m\"] / spacing)),",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M15",
+   "file": "sgsewer/network.py",
+   "what": "diameter allowed to shrink downstream",
+   "original": "d_min = max([u[\"d_mm\"] for u in ups], default=0)",
+   "mutated": "d_min = 0",
+   "killed": false,
+   "killed_without_snapshot": false,
+   "pytest_full": "......................................................                   [100%]",
+   "pytest_without_snapshot": "....................................................                     [100%]"
+  },
+  {
+   "id": "M16",
+   "file": "sgsewer/cost.py",
+   "what": "price escalation inverted",
+   "original": "return e[\"tpi_now\"] / e[\"tpi_base\"]",
+   "mutated": "return e[\"tpi_base\"] / e[\"tpi_now\"]",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M17",
+   "file": "sgsewer/cost.py",
+   "what": "trench support on one face only",
+   "original": "shoring = 2.0 * h * rt[\"shoring_per_m2_face\"] * deep",
+   "mutated": "shoring = h * rt[\"shoring_per_m2_face\"] * deep",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M18",
+   "file": "sgsewer/cost.py",
+   "what": "contingency taken on direct works, not on the contract",
+   "original": "contingency = contract * oc[\"contingency\"][level]",
+   "mutated": "contingency = direct * oc[\"contingency\"][level]",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M19",
+   "file": "sgsewer/cost.py",
+   "what": "a reach exactly at the open-cut limit costed as jacking",
+   "original": "return \"pipe jacking\" if mean_invert_depth > cc[\"geometry\"][\"max_open_cut_invert_depth_m\"][\"value\"] else \"open cut\"",
+   "mutated": "return \"pipe jacking\" if mean_invert_depth >= cc[\"geometry\"][\"max_open_cut_invert_depth_m\"][\"value\"] else \"open cut\"",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M20",
+   "file": "sgsewer/cost.py",
+   "what": "backfill volume ignores the pipe and bedding",
+   "original": "v_backfill = v_exc - pipe_vol - v_bed",
+   "mutated": "v_backfill = v_exc",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M21",
+   "file": "sgsewer/programme.py",
+   "what": "S-curve replaced by a straight line",
+   "original": "return 3.0 * t * t - 2.0 * t ** 3",
+   "mutated": "return t",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M22",
+   "file": "sgsewer/programme.py",
+   "what": "all retention released at completion",
+   "original": "add(s[\"dlp_end\"], works * ret / 2.0)",
+   "mutated": "add(s[\"construction_end\"], works * ret / 2.0)",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M23",
+   "file": "sgsewer/programme.py",
+   "what": "financial year boundary moved to January",
+   "original": "return first_fy + m // 12",
+   "mutated": "return first_fy + (m + 3) // 12",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M24",
+   "file": "sgsewer/programme.py",
+   "what": "packages allowed to start before funding approval",
+   "original": "begin = max(latest_start, approved)",
+   "mutated": "begin = latest_start",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M25",
+   "file": "sgsewer/programme.py",
+   "what": "S$100 million approval threshold moved to S$200 million",
+   "original": "if scheme_budget >= 100e6:",
+   "mutated": "if scheme_budget >= 200e6:",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M26",
+   "file": "sgsewer/programme.py",
+   "what": "outturn escalation simple instead of compound",
+   "original": "return (1.0 + rate) ** (months / 12.0)",
+   "mutated": "return 1.0 + rate * months / 12.0",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M27",
+   "file": "sgsewer/programme.py",
+   "what": "retention not deducted from monthly payments",
+   "original": "add(m, certified * (1.0 - ret))",
+   "mutated": "add(m, certified)",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M28",
+   "file": "sgsewer/programme.py",
+   "what": "build-out starts a year late",
+   "original": "return min(max((fy - need_fy + 1) / years, 0.0), 1.0)",
+   "mutated": "return min(max((fy - need_fy) / years, 0.0), 1.0)",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M29",
+   "file": "sgsewer/capacity.py",
+   "what": "existing use of the receiving sewer ignored",
+   "original": "spare = cap * (1.0 - used)",
+   "mutated": "spare = cap",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  },
+  {
+   "id": "M30",
+   "file": "sgsewer/pipeline.py",
+   "what": "on-cost ratio: largest accredited-checker ratio instead of the mean",
+   "original": "\"central\": statistics.mean(ac) + m,",
+   "mutated": "\"central\": max(ac) + m,",
+   "killed": true,
+   "killed_without_snapshot": true,
+   "pytest_full": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!",
+   "pytest_without_snapshot": "!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!"
+  }
+ ]
+}

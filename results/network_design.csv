@@ -1,0 +1,106 @@
+reach,to,class,road,length_m,adwf_m3d,q_peak_ls,d_mm,slope_one_in,depth_ratio,depth_limit,velocity_ms,velocity_at_adwf_ms,governs,invert_up_m,invert_down_m,manholes,method,direct_cost_central,depth_ok,velocity_ok
+R001,R025,branch,Forest Drive,1096.3,125.5,4.36,200,100.0,0.2461,0.5,0.725,0.525,maximum grade (not self-cleansing),1.7,12.663,10,pipe jacking,5866144,1,0
+R002,R006,branch,Brickland Road,266.1,14.4,0.5,200,100.0,0.0862,0.5,0.381,0.273,maximum grade (not self-cleansing),1.7,4.361,3,open cut,378695,1,0
+R003,R009,branch,Brickland Road,379.2,17.2,0.6,200,100.0,0.0936,0.5,0.402,0.288,maximum grade (not self-cleansing),1.7,5.492,4,open cut,600213,1,0
+R004,R006,branch,Brickland Close,195.9,802.4,27.86,300,211.0,0.4512,0.5,0.9,0.663,self-cleansing velocity,1.8,2.728,2,open cut,252134,1,1
+R005,R020,branch,Forest Drive,699.0,1018.8,35.38,300,186.8,0.5,0.5,1.001,0.742,depth limit,1.8,5.542,6,open cut,1179956,1,1
+R006,R010,branch,Brickland Crescent,213.4,816.9,28.36,300,213.6,0.4574,0.5,0.9,0.664,self-cleansing velocity,4.461,5.46,2,open cut,681885,1,1
+R007,R026,branch,Brickland Road,628.5,1414.4,49.11,375,308.6,0.4953,0.5,0.9,0.667,self-cleansing velocity,1.875,3.911,6,open cut,992426,1,1
+R008,R014,branch,Brickland Lane,218.3,1236.4,42.93,375,281.3,0.4464,0.5,0.9,0.663,self-cleansing velocity,1.875,2.651,2,open cut,301192,1,1
+R009,R018,branch,Brickland Road,307.1,23.1,0.8,200,100.0,0.1078,0.5,0.439,0.315,maximum grade (not self-cleansing),5.492,8.562,3,pipe jacking,1662671,1,0
+R010,R012,branch,Brickland Crescent,66.0,1816.4,63.07,375,193.2,0.5,0.5,1.142,0.847,depth limit,5.535,5.876,1,open cut,254395,1,1
+R011,R019,branch,Brickland Crescent,300.8,48.0,1.67,200,100.0,0.1533,0.5,0.547,0.393,maximum grade (not self-cleansing),1.7,4.708,3,open cut,438038,1,0
+R012,R013,branch,Brickland Crescent,39.2,1821.5,63.25,375,192.1,0.5,0.5,1.145,0.849,depth limit,5.876,6.08,1,open cut,166985,1,1
+R013,R023,branch,Brickland Crescent,313.6,2497.3,86.71,450,270.3,0.5,0.5,1.09,0.808,depth limit,6.155,7.316,3,pipe jacking,2149883,1,1
+R014,R016,branch,Brickland Lane,82.5,1243.8,43.19,375,282.5,0.4485,0.5,0.9,0.663,self-cleansing velocity,2.651,2.943,1,open cut,130820,1,1
+R015,R033,branch,Bukit Batok Road,832.1,371.5,12.9,200,126.4,0.4655,0.5,0.9,0.664,self-cleansing velocity,1.7,8.283,7,open cut,2548135,1,1
+R016,R017,branch,Tengah Boulevard,9.4,1244.3,43.2,375,282.5,0.4486,0.5,0.9,0.663,self-cleansing velocity,2.943,2.976,1,open cut,28166,1,1
+R017,R021,branch,Tengah Boulevard,166.6,1245.8,43.26,375,282.8,0.449,0.5,0.9,0.663,self-cleansing velocity,2.976,3.566,2,open cut,288869,1,1
+R018,R022,branch,Tengah Boulevard,166.7,31.4,1.09,200,100.0,0.1249,0.5,0.482,0.346,maximum grade (not self-cleansing),8.562,10.23,2,pipe jacking,1005687,1,0
+R019,R021,branch,Brickland Crescent,84.9,126.9,4.41,200,100.0,0.2476,0.5,0.727,0.527,maximum grade (not self-cleansing),4.708,5.558,1,open cut,272450,1,0
+R020,R022,branch,Forest Drive,76.7,1058.5,36.75,300,173.0,0.5,0.5,1.04,0.771,depth limit,5.542,5.985,1,open cut,283698,1,1
+R021,R023,branch,Tengah Boulevard,12.2,1372.7,47.66,375,302.5,0.4839,0.5,0.9,0.666,self-cleansing velocity,5.733,5.773,1,open cut,66722,1,1
+R022,R025,branch,Tengah Boulevard,12.2,1090.0,37.85,300,163.2,0.5,0.5,1.071,0.794,depth limit,10.33,10.404,1,pipe jacking,222770,1,1
+R023,R027,trunk,Tengah Boulevard,139.4,3870.0,134.38,600,522.0,0.5,0.5,0.951,0.705,depth limit,7.466,7.733,2,pipe jacking,1182286,1,1
+R024,R026,branch,Tengah Way,126.6,19.1,0.66,200,100.0,0.0985,0.5,0.415,0.297,maximum grade (not self-cleansing),1.7,2.966,2,open cut,160453,1,0
+R025,R035,branch,Tengah Boulevard,673.7,1215.4,42.2,300,131.3,0.5,0.5,1.194,0.885,depth limit,12.763,17.895,6,pipe jacking,4577354,1,1
+R026,R029,branch,Tengah Way,224.9,1433.5,49.77,375,310.2,0.5,0.5,0.901,0.668,depth limit,3.911,4.636,2,open cut,665192,1,1
+R027,R028,trunk,Tengah Boulevard,210.8,3888.9,135.03,600,516.9,0.5,0.5,0.955,0.708,depth limit,7.733,8.14,2,pipe jacking,1661624,1,1
+R028,R030,trunk,Tengah Boulevard,77.8,3898.1,135.35,600,514.5,0.5,0.5,0.957,0.71,depth limit,8.14,8.292,1,pipe jacking,652006,1,1
+R029,R031,branch,(unnamed road),81.8,2719.0,94.41,450,228.0,0.5,0.5,1.187,0.88,depth limit,4.711,5.07,1,open cut,285258,1,1
+R030,R033,trunk,Tengah Boulevard,163.4,4498.9,156.21,600,386.3,0.5,0.5,1.105,0.819,depth limit,8.292,8.715,2,pipe jacking,1362580,1,1
+R031,R037,branch,(unnamed road),261.5,2766.9,96.07,525,482.8,0.4946,0.5,0.9,0.667,self-cleansing velocity,5.145,5.687,3,open cut,1021065,1,1
+R032,R056,branch,Tengah Drive,597.4,706.8,24.54,300,192.6,0.4098,0.5,0.9,0.661,self-cleansing velocity,1.8,4.902,5,open cut,949369,1,1
+R033,R035,trunk,Tengah Boulevard,92.1,4870.3,169.11,600,329.6,0.5,0.5,1.196,0.887,depth limit,8.715,8.994,1,pipe jacking,753980,1,1
+R034,R044,branch,Tengah Boulevard,159.4,869.0,30.17,300,223.0,0.4798,0.5,0.9,0.666,self-cleansing velocity,1.8,2.515,2,open cut,204362,1,1
+R035,R044,trunk,Tengah Boulevard,144.4,6085.7,211.31,750,693.9,0.5,0.5,0.957,0.709,depth limit,18.345,18.553,2,pipe jacking,1919755,1,1
+R036,R043,branch,Plantation Close,132.4,733.3,25.46,300,197.8,0.4213,0.5,0.9,0.661,self-cleansing velocity,1.8,2.469,2,open cut,172785,1,1
+R037,R039,branch,(unnamed road),36.9,2803.3,97.34,525,487.0,0.4997,0.5,0.9,0.667,self-cleansing velocity,5.687,5.762,1,open cut,164018,1,1
+R038,R046,branch,Tengah Park Walk,148.3,44.3,1.54,200,100.0,0.1475,0.5,0.534,0.384,maximum grade (not self-cleansing),1.7,3.183,2,open cut,188733,1,0
+R039,R041,branch,(unnamed road),35.3,3550.8,123.29,525,304.2,0.5,0.5,1.139,0.844,depth limit,5.762,5.878,1,open cut,160062,1,1
+R040,R053,branch,Bukit Batok Road,321.2,1363.4,47.34,375,301.1,0.4813,0.5,0.9,0.666,self-cleansing velocity,1.875,2.942,3,open cut,458254,1,1
+R041,R050,trunk,(unnamed road),232.7,5582.6,193.84,750,770.8,0.4902,0.5,0.9,0.666,self-cleansing velocity,6.103,6.405,2,pipe jacking,2113494,1,1
+R042,R046,branch,Tengah Park Avenue,84.6,44.5,1.54,200,100.0,0.1477,0.5,0.534,0.384,maximum grade (not self-cleansing),1.7,2.546,1,open cut,97651,1,0
+R043,R052,branch,Plantation Close,248.0,740.8,25.72,300,199.3,0.4246,0.5,0.9,0.662,self-cleansing velocity,2.469,3.714,3,open cut,388669,1,1
+R044,R057,trunk,Tengah Boulevard,333.9,6954.7,241.48,750,531.3,0.5,0.5,1.093,0.81,depth limit,18.553,19.182,3,pipe jacking,3783101,1,1
+R045,R051,branch,Tengah Park Avenue,174.0,643.0,22.33,225,101.1,0.5,0.5,1.123,0.833,depth limit,1.725,3.446,2,open cut,228318,1,1
+R046,R049,branch,Tengah Park Avenue,99.2,88.8,3.08,200,100.0,0.2072,0.5,0.656,0.473,maximum grade (not self-cleansing),3.183,4.175,1,open cut,158761,1,0
+R047,R065,branch,Tengah Garden Avenue,480.0,782.0,27.15,300,207.1,0.4424,0.5,0.9,0.663,self-cleansing velocity,1.8,4.117,5,open cut,720904,1,1
+R048,R056,branch,Tengah Boulevard,193.2,1055.8,36.66,300,173.9,0.5,0.5,1.037,0.769,depth limit,1.8,2.911,2,open cut,254465,1,1
+R049,R061,branch,Tengah Park Avenue,315.4,1573.3,54.63,375,257.5,0.5,0.5,0.989,0.733,depth limit,4.35,5.575,3,open cut,1050890,1,1
+R050,R054,trunk,(unnamed road),97.0,5591.5,194.15,750,771.6,0.4908,0.5,0.9,0.666,self-cleansing velocity,6.405,6.531,1,pipe jacking,915915,1,1
+R051,R071,branch,Tengah Park Avenue,523.8,650.5,22.59,300,181.1,0.3851,0.5,0.9,0.659,self-cleansing velocity,3.521,6.413,5,open cut,1677474,1,1
+R052,R058,branch,Tengah Garden Avenue,146.2,1771.2,61.5,375,203.2,0.5,0.5,1.114,0.826,depth limit,3.789,4.508,2,open cut,435756,1,1
+R053,R074,branch,Plantation Crescent,554.2,2241.8,77.84,450,335.4,0.5,0.5,0.979,0.726,depth limit,3.017,4.669,5,open cut,1587488,1,1
+R054,R055,trunk,(unnamed road),28.9,6156.0,213.75,750,678.2,0.5,0.5,0.968,0.717,depth limit,6.531,6.574,1,pipe jacking,406481,1,1
+R055,R064,trunk,(unnamed road),231.1,6168.0,214.17,750,675.5,0.5,0.5,0.97,0.719,depth limit,6.574,6.916,2,pipe jacking,2120249,1,1
+R056,R057,branch,Tengah Drive,14.8,1762.7,61.2,375,205.2,0.5,0.5,1.108,0.822,depth limit,4.977,5.049,1,open cut,68045,1,1
+R057,R075,trunk,Tengah Drive,473.8,8717.4,302.69,900,894.3,0.5,0.5,0.952,0.705,depth limit,19.332,19.862,4,pipe jacking,5741289,1,1
+R058,R070,branch,Tengah Garden Avenue,343.2,1845.1,64.07,375,187.2,0.5,0.5,1.16,0.86,depth limit,4.508,6.341,3,open cut,1220436,1,1
+R059,R065,branch,Plantation Walk,137.7,633.9,22.01,225,104.0,0.5,0.5,1.107,0.821,depth limit,1.725,3.049,2,open cut,177569,1,1
+R060,R067,branch,Tengah Drive,144.9,561.8,19.51,225,132.5,0.5,0.5,0.981,0.727,depth limit,1.725,2.819,2,open cut,180334,1,1
+R061,R071,branch,Tengah Central,275.3,3318.2,115.21,525,348.3,0.5,0.5,1.064,0.789,depth limit,5.725,6.516,3,pipe jacking,2033368,1,1
+R062,R079,branch,Tengah Boulevard,363.7,936.6,32.52,300,221.0,0.5,0.5,0.92,0.682,depth limit,1.8,3.445,4,open cut,511661,1,1
+R063,R081,branch,(unnamed road),344.8,726.9,25.24,300,196.5,0.4185,0.5,0.9,0.661,self-cleansing velocity,1.8,3.554,3,open cut,480158,1,1
+R064,R069,trunk,(unnamed road),88.6,6971.6,242.07,750,528.8,0.5,0.5,1.096,0.812,depth limit,6.916,7.083,1,pipe jacking,862817,1,1
+R065,R068,branch,Tengah Garden Avenue,27.9,1415.9,49.16,375,308.9,0.4957,0.5,0.9,0.667,self-cleansing velocity,4.192,4.283,1,open cut,96078,1,1
+R066,R068,branch,Plantation Walk,11.9,9.7,0.34,200,100.0,0.0716,0.5,0.338,0.242,maximum grade (not self-cleansing),1.7,1.819,1,open cut,20984,1,0
+R067,R084,branch,Tengah Garden Walk,369.5,1044.4,36.27,300,177.8,0.5,0.5,1.026,0.761,depth limit,2.894,4.972,4,open cut,994017,1,1
+R068,R073,branch,Tengah Garden Avenue,207.6,1425.6,49.5,375,310.3,0.4984,0.5,0.9,0.667,self-cleansing velocity,4.283,4.952,2,open cut,654508,1,1
+R069,R082,trunk,(unnamed road),242.2,7091.6,246.24,750,511.0,0.5,0.5,1.115,0.826,depth limit,7.083,7.557,3,pipe jacking,2430000,1,1
+R070,R072,branch,Tengah Garden Avenue,56.9,1889.5,65.61,375,178.5,0.5,0.5,1.188,0.881,depth limit,6.341,6.659,1,pipe jacking,416517,1,1
+R071,R088,trunk,Tengah Central,271.0,3968.6,137.8,600,496.4,0.5,0.5,0.975,0.723,depth limit,6.713,7.26,3,pipe jacking,2160311,1,1
+R072,R085,branch,Tengah Garden Avenue,178.8,1896.8,65.86,375,177.2,0.5,0.5,1.193,0.884,depth limit,6.659,7.669,2,pipe jacking,1190635,1,1
+R073,R086,branch,Tengah Garden Avenue,178.5,1442.9,50.1,375,306.2,0.5,0.5,0.907,0.673,depth limit,4.952,5.535,2,open cut,627539,1,1
+R074,R085,branch,Tengah Boulevard,164.2,3201.5,111.16,525,374.2,0.5,0.5,1.027,0.761,depth limit,4.744,5.183,2,open cut,602773,1,1
+R075,R084,trunk,Tengah Garden Walk,144.8,9395.6,326.24,900,769.8,0.5,0.5,1.026,0.76,depth limit,19.862,20.05,2,pipe jacking,2110706,1,1
+R076,R086,branch,Tengah Boulevard,164.2,716.6,24.88,300,194.5,0.414,0.5,0.9,0.661,self-cleansing velocity,1.8,2.644,2,open cut,213111,1,1
+R077,R089,branch,(unnamed road),196.0,555.2,19.28,225,135.6,0.5,0.5,0.97,0.719,depth limit,1.725,3.17,2,open cut,245741,1,1
+R078,R088,branch,Tengah Drive,183.6,1220.5,42.38,300,130.2,0.5,0.5,1.199,0.889,depth limit,1.8,3.21,2,open cut,251367,1,1
+R079,R087,branch,(unnamed road),176.6,1544.3,53.62,375,267.3,0.5,0.5,0.971,0.72,depth limit,3.52,4.181,2,open cut,490976,1,1
+R080,R094,branch,(unnamed road),362.9,443.3,15.39,200,113.5,0.5,0.5,0.98,0.726,depth limit,1.7,4.896,4,open cut,544514,1,1
+R081,R092,branch,Plantation Crescent,248.3,731.9,25.41,300,197.5,0.4207,0.5,0.9,0.661,self-cleansing velocity,3.554,4.811,3,open cut,706100,1,1
+R082,R091,trunk,(unnamed road),154.8,7165.6,248.81,750,500.5,0.5,0.5,1.126,0.835,depth limit,7.557,7.866,2,pipe jacking,1584911,1,1
+R083,R091,branch,Tengah Drive,82.0,712.7,24.75,300,193.7,0.4123,0.5,0.9,0.661,self-cleansing velocity,1.8,2.223,1,open cut,101083,1,1
+R084,R097,trunk,Tengah Garden Walk,368.1,10440.0,362.5,900,623.5,0.5,0.5,1.14,0.845,depth limit,20.05,20.64,4,pipe jacking,4910454,1,1
+R085,R090,trunk,Tengah Garden Avenue,51.2,5098.3,177.02,750,724.1,0.4569,0.5,0.9,0.664,self-cleansing velocity,8.044,8.114,1,pipe jacking,603190,1,1
+R086,R089,branch,Tengah Garden Avenue,43.3,2159.5,74.98,450,361.4,0.5,0.5,0.943,0.699,depth limit,5.61,5.73,1,open cut,180580,1,1
+R087,R090,branch,(unnamed road),14.5,1545.9,53.68,375,266.7,0.5,0.5,0.972,0.721,depth limit,4.181,4.236,1,open cut,58736,1,1
+R088,R091,trunk,Tengah Drive,18.9,5189.1,180.18,750,733.1,0.4632,0.5,0.9,0.664,self-cleansing velocity,7.41,7.435,1,pipe jacking,347959,1,1
+R089,R093,branch,Tengah Garden Avenue,144.2,2714.7,94.26,450,228.7,0.5,0.5,1.185,0.879,depth limit,5.73,6.36,2,pipe jacking,1046902,1,1
+R090,R096,trunk,Tengah Garden Avenue,268.3,6644.2,230.7,750,582.2,0.5,0.5,1.044,0.774,depth limit,8.114,8.575,3,pipe jacking,2684906,1,1
+R091,R095,trunk,Tengah Central,210.3,13067.4,453.73,1050,1353.0,0.5648,0.6667,0.9,0.673,self-cleansing velocity,8.166,8.322,2,pipe jacking,2400181,1,1
+R092,R096,branch,Tengah Garden Walk,184.8,1354.9,47.05,375,299.8,0.479,0.5,0.9,0.666,self-cleansing velocity,4.886,5.503,2,open cut,643502,1,1
+R093,R099,branch,Tengah Garden Avenue,210.0,2722.2,94.52,450,227.5,0.5,0.5,1.189,0.881,depth limit,6.36,7.283,2,pipe jacking,1440834,1,1
+R094,R095,branch,(unnamed road),43.3,1090.3,37.86,300,163.1,0.5,0.5,1.071,0.794,depth limit,4.996,5.262,1,open cut,155151,1,1
+R095,R100,trunk,Tengah Central,200.9,14157.7,491.59,1050,1417.6,0.6035,0.6667,0.9,0.677,self-cleansing velocity,8.322,8.464,2,pipe jacking,2318931,1,1
+R096,R098,trunk,Tengah Garden Avenue,61.5,7999.1,277.75,900,979.6,0.4883,0.5,0.9,0.666,self-cleansing velocity,8.725,8.788,1,pipe jacking,748557,1,1
+R097,R098,trunk,(unnamed road),25.5,10484.4,364.04,900,618.2,0.5,0.5,1.144,0.848,depth limit,20.64,20.682,1,pipe jacking,675225,1,1
+R098,R100,trunk,Tengah Garden Avenue,88.6,18483.4,641.79,1050,1112.4,0.6667,0.6667,1.047,0.796,depth limit,20.832,20.911,1,pipe jacking,1288803,1,1
+R099,R102,trunk,Tengah Garden Avenue,393.2,3902.8,135.52,600,513.2,0.5,0.5,0.959,0.711,depth limit,7.433,8.2,4,pipe jacking,3130508,1,1
+R100,R101,trunk,Tengah Garden Avenue,99.9,32641.2,1133.37,1350,1362.7,0.6667,0.6667,1.118,0.85,depth limit,21.211,21.284,1,pipe jacking,1846436,1,1
+R101,R103,trunk,Tengah Garden Avenue,230.2,32815.0,1139.41,1350,1348.3,0.6667,0.6667,1.124,0.855,depth limit,21.284,21.455,2,pipe jacking,4037411,1,1
+R102,R105,trunk,Tengah Garden Avenue,8.5,4280.9,148.64,600,426.6,0.5,0.5,1.051,0.779,depth limit,8.2,8.22,1,pipe jacking,194812,1,1
+R103,R104,trunk,Tengah Garden Avenue,6.3,34357.1,1192.96,1350,1230.0,0.6667,0.6667,1.177,0.895,depth limit,21.455,21.46,1,pipe jacking,813774,1,1
+R104,OUTLET,trunk,Tengah Garden Avenue,5.1,34565.8,1200.2,1350,1215.2,0.6667,0.6667,1.184,0.9,depth limit,21.46,21.465,1,pipe jacking,800706,1,1
+R105,OUTLET,trunk,Tengah Garden Avenue,4.5,4373.5,151.86,600,408.7,0.5,0.5,1.074,0.796,depth limit,8.22,8.23,1,pipe jacking,168202,1,1

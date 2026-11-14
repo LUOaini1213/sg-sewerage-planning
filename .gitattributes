@@ -1,0 +1,4 @@
+# Keep LF everywhere: data/inputs/manifest.csv pins SHA-256 hashes of the input bytes.
+* text=auto eol=lf
+*.png binary
+*.pdf binary

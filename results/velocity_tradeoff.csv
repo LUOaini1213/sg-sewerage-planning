@@ -1,0 +1,4 @@
+v_ceiling_ms,length_weighted_velocity_ms,outlet_d_mm,mean_invert_depth_m,max_invert_depth_m,open_cut_m,jacking_m,budget_central
+1.0,0.865,1500,5.99,18.17,13603,8223,163165633
+1.2,0.931,1350,6.48,21.46,13223,8602,163921612
+1.5,1.024,1200,6.94,23.19,12433,9393,164566726

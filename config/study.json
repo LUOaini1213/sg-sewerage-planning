@@ -1,0 +1,559 @@
+{
+  "_note": "Every number the study uses that is not in data/inputs/. 'basis' is either a citation (DATA_SOURCES.md has the full reference) or the word ASSUMPTION. Change a value here, run scripts/run_all.py, and every result and the README follow.",
+  "study": {
+    "planning_area": "TENGAH",
+    "price_base": "1Q2026",
+    "programme_start": "2027-04",
+    "block_budget_first_fy": 2027,
+    "block_budget_years": 5
+  },
+  "flows": {
+    "homes_total": {
+      "value": 42000,
+      "basis": "HDB, 'Smart and Sustainable Tengah' (Annex B, June 2024): 'about 42,000 new homes when fully developed'"
+    },
+    "homes_public": {
+      "value": 30000,
+      "basis": "Press reports of HDB's September 2016 master plan announcement (30,000 public, 12,000 private). Secondary source."
+    },
+    "homes_private": {
+      "value": 12000,
+      "basis": "As above. Secondary source."
+    },
+    "persons_per_dwelling": {
+      "value": 3.5,
+      "basis": "PUB COPSSW 3rd Ed (Mar 2025) cl. 3.2.1(a): 'a single dwelling unit shall be taken to house 3.5 persons'"
+    },
+    "lpcd_public": {
+      "value": 230,
+      "basis": "PUB COPSSW 3rd Ed cl. 3.2.1(a) Table 4, public housing, litres per capita per day"
+    },
+    "lpcd_private": {
+      "value": 250,
+      "basis": "PUB COPSSW 3rd Ed cl. 3.2.1(a) Table 4, private housing, litres per capita per day"
+    },
+    "peak_factor": {
+      "value": 3.0,
+      "basis": "PUB COPSSW 3rd Ed cl. 3.2.1(a) Table 4. Applied to non-residential flow as well: ASSUMPTION"
+    },
+    "cr_residential_gfa_share": {
+      "value": 0.6,
+      "basis": "ASSUMPTION: 60% of the gross floor area of 'Commercial & Residential' parcels is housing"
+    },
+    "return_factor_nonres": {
+      "value": 0.9,
+      "basis": "ASSUMPTION: share of non-residential water use that reaches the sewer"
+    },
+    "nonres": {
+      "_note": "COPSSW cl. 3.2.1(b) gives no rates for non-residential development ('the proposed design flow together with the basis shall be submitted to PUB for approval'). The rates below are proxies from PUB's published water-use benchmarks; the plot ratios are assumptions wherever the Master Plan gives none.",
+      "commercial": {
+        "water_m3_per_m2_gfa_year": 1.1,
+        "rate_basis": "PUB Sectoral Water Efficiency Benchmark (published Dec 2025): retail malls, median 1.1 m3/m2/year",
+        "plot_ratio_if_unspecified": 1.0,
+        "plot_ratio_basis": "ASSUMPTION"
+      },
+      "industrial_b2": {
+        "water_m3_per_m2_gfa_year": 1.0,
+        "rate_basis": "ASSUMPTION: PUB office-building median (1.0 m3/m2/year, published Dec 2025) used as a proxy. Process water and trade effluent are not covered",
+        "plot_ratio_if_unspecified": 1.0,
+        "plot_ratio_basis": "ASSUMPTION: the Master Plan shows 'SDP' (subject to detailed planning) for these parcels"
+      },
+      "institutional": {
+        "water_m3_per_m2_gfa_year": 1.0,
+        "rate_basis": "ASSUMPTION: PUB office-building median used as a proxy for schools, health, civic, sports and worship sites",
+        "plot_ratio_if_unspecified": 1.0,
+        "plot_ratio_basis": "ASSUMPTION: the Master Plan shows 'EVA' (subject to evaluation)"
+      },
+      "transport": {
+        "water_m3_per_m2_gfa_year": 1.0,
+        "rate_basis": "ASSUMPTION: office proxy",
+        "plot_ratio_if_unspecified": 0.3,
+        "plot_ratio_basis": "ASSUMPTION: depot-type sites, low built intensity"
+      }
+    },
+    "land_use_class": {
+      "RESIDENTIAL": "residential",
+      "COMMERCIAL & RESIDENTIAL": "mixed",
+      "COMMERCIAL": "commercial",
+      "BUSINESS 2": "industrial_b2",
+      "EDUCATIONAL INSTITUTION": "institutional",
+      "HEALTH & MEDICAL CARE": "institutional",
+      "CIVIC & COMMUNITY INSTITUTION": "institutional",
+      "SPORTS & RECREATION": "institutional",
+      "PLACE OF WORSHIP": "institutional",
+      "TRANSPORT FACILITIES": "transport",
+      "PARK": "none",
+      "ROAD": "none",
+      "WATERBODY": "none",
+      "UTILITY": "none",
+      "MASS RAPID TRANSIT": "none",
+      "RESERVE SITE": "none"
+    }
+  },
+  "hydraulics": {
+    "manning_n": {
+      "value": 0.013,
+      "basis": "ASSUMPTION: the COPSSW does not state a roughness value"
+    },
+    "diameters_mm": [
+      200,
+      225,
+      300,
+      375,
+      450,
+      525,
+      600,
+      750,
+      900,
+      1050,
+      1200,
+      1350,
+      1500,
+      1800,
+      2100
+    ],
+    "diameters_basis": "ASSUMPTION: a common nominal series. 200 mm is the COPSSW minimum (cl. 3.2.1(d)(i))",
+    "depth_ratio_small": {
+      "value": 0.5,
+      "basis": "PUB COPSSW 3rd Ed cl. 3.2.1(c)(i): not greater than half the nominal diameter for pipes up to 1.0 m"
+    },
+    "depth_ratio_large": {
+      "value": 0.6666666666666666,
+      "basis": "PUB COPSSW 3rd Ed cl. 3.2.1(c)(ii): not greater than two-thirds of the nominal diameter for pipes larger than 1.0 m"
+    },
+    "large_pipe_above_m": {
+      "value": 1.0,
+      "basis": "PUB COPSSW 3rd Ed cl. 3.2.1(c)"
+    },
+    "v_min": {
+      "value": 0.9,
+      "basis": "PUB COPSSW 3rd Ed cl. 3.2.1(e)(ii): not less than 0.9 m/s at design peak flow"
+    },
+    "v_max": {
+      "value": 2.4,
+      "basis": "PUB COPSSW 3rd Ed cl. 3.2.1(e)(ii): not more than 2.4 m/s at design peak flow"
+    },
+    "min_cover_to_soffit_m": {
+      "value": 1.5,
+      "basis": "PUB COPSSW 3rd Ed cl. 3.2.1(d)(ii): 'minimum depth of 1.5m below ground level'. Read here as depth to the pipe soffit: ASSUMPTION"
+    },
+    "manhole_max_spacing_m": {
+      "value": 120,
+      "basis": "PUB COPSSW 3rd Ed cl. 3.2.2(c): distance between manholes not more than 120 m"
+    },
+    "ground": {
+      "value": "flat",
+      "basis": "ASSUMPTION: one ground level for the whole town. No public elevation model of the regraded town was used"
+    },
+    "v_target_cop": {
+      "value": 1.5,
+      "basis": "PUB COPSSW 3rd Ed cl. 3.2.1(e)(i): 'Sewers shall be designed to achieve a velocity of approximately 1.5m/s at design peak flow'"
+    },
+    "v_design_ceiling": {
+      "value": 1.2,
+      "basis": "ASSUMPTION (design choice of this study): a diameter is accepted when the peak-flow velocity at the depth limit is not above this value. See results/velocity_tradeoff.csv for what 1.0 and 1.5 m/s would do"
+    },
+    "v_design_ceiling_alternatives": [
+      1.0,
+      1.2,
+      1.5
+    ],
+    "max_slope": {
+      "value": 0.01,
+      "basis": "ASSUMPTION: no reach is laid steeper than 1 in 100. Reaches that would need more to reach 0.9 m/s are flagged as not self-cleansing at design peak flow"
+    },
+    "not_applied": "COPSSW cl. 3.2.1(e): 'For small development using the minimum pipe size of 200mm diameter, new sewers should be laid at a minimum grade of 1 in 50 where possible' - not applied; it is written for small developments, and on flat ground it would add 2 m of depth per 100 m"
+  },
+  "network": {
+    "outlet_rule": "westmost node of the road graph",
+    "outlet_basis": "ASSUMPTION: the real connection point is not public. West was chosen because a DTSS Phase 2 link-sewer contract is named after Old Choa Chu Kang Road / Jalan Bahar (GeBIZ PUB000ETT21000025), west of the town",
+    "trunk_from_diameter_mm": {
+      "value": 600,
+      "basis": "ASSUMPTION: labelling only"
+    }
+  },
+  "cost": {
+    "_note": "low / central / high. Rates marked Arcadis are from the Arcadis Construction Cost Handbook Singapore 2022, 'Major rates for selected Asian cities', Singapore column, 4th Quarter 2021 prices; they are building-works rates used as proxies for trench works. Everything marked ASSUMPTION is the author's placeholder, not a market rate.",
+    "escalation": {
+      "tpi_base": 117.1,
+      "tpi_base_period": "2021",
+      "tpi_now": 140.2,
+      "tpi_now_period": "1Q2026",
+      "basis": "BCA Tender Price Index (2010=100), BCA free statistics sheet, data as at 21 May 2026. Building-works index applied to civil works: ASSUMPTION. The 2021 annual value stands in for 4Q2021"
+    },
+    "rates_4q2021": {
+      "excavation_per_m3": {
+        "low": 26,
+        "central": 26,
+        "high": 26,
+        "basis": "Arcadis: excavating basement not exceeding 2.00 m deep, S$26/m3"
+      },
+      "disposal_per_m3": {
+        "low": 20,
+        "central": 23,
+        "high": 26,
+        "basis": "Arcadis: remove excavated materials off site, S$20-26/m3"
+      },
+      "bedding_concrete_per_m3": {
+        "low": 235,
+        "central": 241.5,
+        "high": 248,
+        "basis": "Arcadis: mass concrete grade 15, S$235-248/m3"
+      },
+      "structural_concrete_per_m3": {
+        "low": 159,
+        "central": 162,
+        "high": 165,
+        "basis": "Arcadis: reinforced concrete grade 30, S$159-165/m3 (concrete only)"
+      },
+      "rebar_per_kg": {
+        "low": 1.95,
+        "central": 2.0,
+        "high": 2.05,
+        "basis": "Arcadis: high tensile rod reinforcement, S$1.95-2.05/kg"
+      },
+      "formwork_per_m2": {
+        "low": 51,
+        "central": 51,
+        "high": 51,
+        "basis": "Arcadis: sawn formwork to columns and walls, S$51/m2"
+      }
+    },
+    "assumed_rates_1q2026": {
+      "backfill_per_m3": {
+        "low": 10,
+        "central": 15,
+        "high": 25,
+        "basis": "ASSUMPTION"
+      },
+      "shoring_per_m2_face": {
+        "low": 60,
+        "central": 100,
+        "high": 160,
+        "basis": "ASSUMPTION: trench support, per m2 of supported face, both faces"
+      },
+      "reinstatement_per_m2": {
+        "low": 80,
+        "central": 120,
+        "high": 180,
+        "basis": "ASSUMPTION: road reinstatement over the trench"
+      },
+      "pipe_k": {
+        "low": 0.4,
+        "central": 0.55,
+        "high": 0.75,
+        "basis": "ASSUMPTION: pipe supply, lay, joint and test, S$/m = k x D_mm x (1 + D_mm/1000)"
+      },
+      "jack_base_per_m": {
+        "low": 2100,
+        "central": 3000,
+        "high": 4200,
+        "basis": "ASSUMPTION: pipe jacking / microtunnelling, S$/m = base + per_mm x D_mm, pipe included"
+      },
+      "jack_per_mm": {
+        "low": 4.2,
+        "central": 6.0,
+        "high": 8.4,
+        "basis": "ASSUMPTION"
+      },
+      "shaft_base": {
+        "low": 28000,
+        "central": 40000,
+        "high": 56000,
+        "basis": "ASSUMPTION: jacking / receiving shaft with manhole, S$ = (base + per_m x depth) x size factor"
+      },
+      "shaft_per_m_depth": {
+        "low": 8400,
+        "central": 12000,
+        "high": 16800,
+        "basis": "ASSUMPTION"
+      }
+    },
+    "geometry": {
+      "outer_diameter_factor": {
+        "value": 1.2,
+        "basis": "ASSUMPTION: outside diameter = 1.2 x nominal"
+      },
+      "trench_side_clearance_m": {
+        "value": 0.3,
+        "basis": "ASSUMPTION: each side"
+      },
+      "trench_min_width_m": {
+        "value": 0.9,
+        "basis": "ASSUMPTION"
+      },
+      "bedding_under_pipe_m": {
+        "value": 0.15,
+        "basis": "ASSUMPTION: thickness of bedding below the pipe. COPSSW cl. 3.2.1(d)(iii) calls for bedding type D of Standard Drawing PUB/WRN/STD/001C, which was not consulted"
+      },
+      "bedding_haunch_fraction_of_od": {
+        "value": 0.25,
+        "basis": "ASSUMPTION: bedding carried up a quarter of the outside diameter"
+      },
+      "excavation_depth_factor": {
+        "bands_m": [
+          2.0,
+          4.0
+        ],
+        "factors": [
+          1.0,
+          1.5,
+          2.0
+        ],
+        "basis": "ASSUMPTION: multiplier on the Arcadis rate for trenches deeper than 2 m and 4 m"
+      },
+      "shoring_from_depth_m": {
+        "value": 1.5,
+        "basis": "ASSUMPTION"
+      },
+      "deep_shoring_from_depth_m": {
+        "value": 4.0,
+        "basis": "ASSUMPTION: shoring rate doubles below this depth"
+      },
+      "disposal_share": {
+        "low": 0.3,
+        "central": 0.4,
+        "high": 0.6,
+        "basis": "ASSUMPTION: share of the excavated volume carted off site"
+      },
+      "reinstatement_extra_width_m": {
+        "value": 1.0,
+        "basis": "ASSUMPTION"
+      },
+      "max_open_cut_invert_depth_m": {
+        "value": 6.0,
+        "basis": "ASSUMPTION: reaches whose mean invert depth is greater are costed as pipe jacking"
+      },
+      "manhole": {
+        "internal_size_m": [
+          [
+            600,
+            1.2
+          ],
+          [
+            1200,
+            1.8
+          ],
+          [
+            99999,
+            2.4
+          ]
+        ],
+        "wall_m": 0.25,
+        "rebar_kg_per_m3": 120,
+        "fitout_base": 2500,
+        "lining_per_m2": {
+          "low": 70,
+          "central": 100,
+          "high": 150
+        },
+        "basis": "ASSUMPTION: square reinforced-concrete chamber; internal size by pipe diameter; HDPE lining (COPSSW cl. 3.2.2(d)) at an assumed rate; cover, ladder and benching as a lump sum"
+      },
+      "shaft_size_factor": [
+        [
+          600,
+          1.0
+        ],
+        [
+          1200,
+          1.6
+        ],
+        [
+          99999,
+          2.5
+        ]
+      ]
+    },
+    "oncosts": {
+      "preliminaries": {
+        "low": 0.1,
+        "central": 0.15,
+        "high": 0.2,
+        "basis": "ASSUMPTION: preliminaries and traffic management, share of direct works"
+      },
+      "contingency": {
+        "low": 0.1,
+        "central": 0.2,
+        "high": 0.3,
+        "basis": "ASSUMPTION: share of (direct works + preliminaries)"
+      },
+      "pes_fee": {
+        "low": 0.05,
+        "central": 0.08,
+        "high": 0.12,
+        "basis": "ASSUMPTION: professional engineering services (design and supervision), share of the construction contract"
+      },
+      "ac_and_monitoring": {
+        "low": null,
+        "central": null,
+        "high": null,
+        "basis": "Computed at run time from GeBIZ awards (results/gebiz_oncost_ratios.csv): accredited-checker and instrumentation-and-monitoring awards divided by the PUB sewer construction awards they belong to. The matching of awards by title is the author's"
+      }
+    }
+  },
+  "programme": {
+    "_note": "All durations are ASSUMPTIONS in months. The approval route is from MOF's public statements; the time it takes is not published.",
+    "planning_and_consultation_months": {
+      "value": 6,
+      "basis": "ASSUMPTION: scheme planning and in-principle no-objection from HDB, LTA and URA"
+    },
+    "funding_approval_months": {
+      "below_100m": 4,
+      "from_100m": 8,
+      "from_500m": 18,
+      "basis": "Route: MOF parliamentary reply, 6 Feb 2018 - projects above S$100 million need approval from the Development Planning Committee; projects above S$500 million go through the Gateway Process with the Development Projects Advisory Panel. Durations: ASSUMPTION"
+    },
+    "consultant_procurement_months": {
+      "value": 6,
+      "basis": "ASSUMPTION"
+    },
+    "detailed_design_months": {
+      "value": 12,
+      "basis": "ASSUMPTION: design, authority clearances, tender documents"
+    },
+    "construction_tender_months": {
+      "value": 6,
+      "basis": "ASSUMPTION"
+    },
+    "construction": {
+      "open_cut_m_per_month": 300,
+      "jacking_m_per_month": 150,
+      "min_months": 12,
+      "basis": "ASSUMPTION: production per package, all work fronts together"
+    },
+    "defects_liability_months": {
+      "value": 12,
+      "basis": "ASSUMPTION"
+    },
+    "retention": {
+      "value": 0.05,
+      "basis": "ASSUMPTION: 5% of the contract held back; half released at completion, half at the end of the defects liability period"
+    },
+    "commissioning_buffer_months": {
+      "value": 3,
+      "basis": "ASSUMPTION: sewer ready this long before first occupation"
+    },
+    "pes_fee_split": {
+      "design": 0.4,
+      "tender": 0.1,
+      "construction": 0.5,
+      "basis": "ASSUMPTION"
+    },
+    "outturn_escalation_per_year": {
+      "value": 0.03,
+      "basis": "ASSUMPTION. For reference, the BCA Tender Price Index rose from 102.8 (2020) to 139.1 (2025)"
+    },
+    "need_dates": {
+      "_note": "ASSUMPTION: month of first occupation that the sewers of each subzone must be ready for. The study plans the whole town from a clean sheet; in reality parts of Tengah are already occupied and sewered.",
+      "PLANTATION": "2033-04",
+      "PARK": "2034-04",
+      "GARDEN": "2035-04",
+      "BRICKLAND": "2036-04",
+      "TENGAH INDUSTRIAL ESTATE": "2037-04",
+      "FOREST HILL": "2038-04"
+    },
+    "buildout_years": {
+      "value": 6,
+      "basis": "ASSUMPTION: each subzone fills up in equal yearly steps over this many years from its need date"
+    },
+    "timing_shifts_years": [
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "receiving_sewer": {
+    "_note": "ASSUMPTION throughout: nothing about the receiving sewer is public. The table answers 'how big and how empty would it have to be'.",
+    "diameters_mm": [
+      900,
+      1200,
+      1500,
+      1800,
+      2100,
+      2400
+    ],
+    "existing_use_share": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ],
+    "design_velocity_at_limit_depth": {
+      "value": 1.5,
+      "basis": "ASSUMPTION: the receiving sewer was itself laid to give 1.5 m/s at the COPSSW depth limit"
+    }
+  },
+  "sensitivity": {
+    "manning_n": [
+      0.011,
+      0.015
+    ],
+    "persons_per_dwelling_observed": {
+      "year": "2025",
+      "dwelling_type": "Total1/",
+      "basis": "SingStat table 17863, average household size of resident households"
+    },
+    "industrial_intensity_factor": 3.0
+  },
+  "benchmarks": [
+    {
+      "id": "HSL-PPB-C3",
+      "description": "PUB, Sewerage Scheme to Serve Pulau Punggol Barat Contract 3 - pumping mains and pipe bridge: DN800 ductile iron, 690 m open cut + 770 m pipe bridge + 680 m pipe jacking",
+      "value": 28680000,
+      "currency": "SGD",
+      "length_m": 2140,
+      "year": 2021,
+      "basis": "Award value: GeBIZ PUB000ETT21000021 (8 Jul 2021). Lengths: contractor's project page, hsl.com.sg. Pumping main with a bridge, not a gravity sewer"
+    },
+    {
+      "id": "LTA-ZUBLIN-2015",
+      "description": "LTA sewer diversion contract, two lots: 9.8 km of pipe-jacked sewers, 300 mm to 3.1 m diameter, 112 shafts",
+      "value": 85000000,
+      "currency": "EUR",
+      "length_m": 9800,
+      "year": 2015,
+      "basis": "The Construction Index, 27 Aug 2015. Trade-press report of the contractor's announcement"
+    }
+  ],
+  "eur_to_sgd_2015": {
+    "value": 1.55,
+    "basis": "ASSUMPTION: round figure for mid-2015, not looked up"
+  },
+  "gebiz_oncost_pairs": [
+    {
+      "kind": "accredited checker",
+      "service": "PUB000ETT24000060",
+      "construction": [
+        "PUB000ETT23000069",
+        "PUB000ETT24000019"
+      ]
+    },
+    {
+      "kind": "accredited checker",
+      "service": "PUB000ETT25000037",
+      "construction": [
+        "PUB000ETT24000131",
+        "PUB000ETT25000091"
+      ]
+    },
+    {
+      "kind": "accredited checker",
+      "service": "PUB000ETT25000062",
+      "construction": [
+        "PUB000ETT25000006"
+      ]
+    },
+    {
+      "kind": "instrumentation and monitoring",
+      "service": "PUB000ETT23000196",
+      "construction": [
+        "PUB000ETT23000069",
+        "PUB000ETT24000019"
+      ]
+    }
+  ]
+}

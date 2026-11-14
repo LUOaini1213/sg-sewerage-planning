@@ -1,0 +1,183 @@
+year,dwelling_type,avg_household_size_persons
+2000,Total1/,3.7
+2000,HDB 1- & 2- Room Flats2/,2.2
+2000,HDB 3-Room Flats,3.11
+2000,HDB 4-Room Flats,3.95
+2000,HDB 5-Room & Executive Flats,4.13
+2000,Condominiums & Other Apartments,3.67
+2000,Landed Properties,4.65
+2001,Total1/,3.61
+2001,HDB 1- & 2- Room Flats2/,2.19
+2001,HDB 3-Room Flats,3.01
+2001,HDB 4-Room Flats,3.87
+2001,HDB 5-Room & Executive Flats,3.97
+2001,Condominiums & Other Apartments,3.58
+2001,Landed Properties,4.33
+2002,Total1/,3.55
+2002,HDB 1- & 2- Room Flats2/,2.07
+2002,HDB 3-Room Flats,2.93
+2002,HDB 4-Room Flats,3.75
+2002,HDB 5-Room & Executive Flats,3.96
+2002,Condominiums & Other Apartments,3.48
+2002,Landed Properties,4.19
+2003,Total1/,3.52
+2003,HDB 1- & 2- Room Flats2/,1.96
+2003,HDB 3-Room Flats,2.85
+2003,HDB 4-Room Flats,3.75
+2003,HDB 5-Room & Executive Flats,3.96
+2003,Condominiums & Other Apartments,3.45
+2003,Landed Properties,4.3
+2004,Total1/,3.52
+2004,HDB 1- & 2- Room Flats2/,2.04
+2004,HDB 3-Room Flats,2.81
+2004,HDB 4-Room Flats,3.73
+2004,HDB 5-Room & Executive Flats,3.93
+2004,Condominiums & Other Apartments,3.56
+2004,Landed Properties,4.33
+2005,Total1/,3.56
+2005,HDB 1- & 2- Room Flats2/,2.04
+2005,HDB 3-Room Flats,2.8
+2005,HDB 4-Room Flats,3.76
+2005,HDB 5-Room & Executive Flats,4
+2005,Condominiums & Other Apartments,3.52
+2005,Landed Properties,4.54
+2006,Total1/,3.46
+2006,HDB 1- & 2- Room Flats2/,2
+2006,HDB 3-Room Flats,2.77
+2006,HDB 4-Room Flats,3.69
+2006,HDB 5-Room & Executive Flats,3.93
+2006,Condominiums & Other Apartments,3.33
+2006,Landed Properties,4.22
+2007,Total1/,3.48
+2007,HDB 1- & 2- Room Flats2/,2.01
+2007,HDB 3-Room Flats,2.76
+2007,HDB 4-Room Flats,3.65
+2007,HDB 5-Room & Executive Flats,3.93
+2007,Condominiums & Other Apartments,3.44
+2007,Landed Properties,4.22
+2008,Total1/,3.5
+2008,HDB 1- & 2- Room Flats2/,2.09
+2008,HDB 3-Room Flats,2.77
+2008,HDB 4-Room Flats,3.66
+2008,HDB 5-Room & Executive Flats,3.93
+2008,Condominiums & Other Apartments,3.46
+2008,Landed Properties,4.32
+2009,Total1/,3.49
+2009,HDB 1- & 2- Room Flats2/,2.12
+2009,HDB 3-Room Flats,2.77
+2009,HDB 4-Room Flats,3.66
+2009,HDB 5-Room & Executive Flats,3.93
+2009,Condominiums & Other Apartments,3.45
+2009,Landed Properties,4.28
+2010,Total1/,3.5
+2010,HDB 1- & 2- Room Flats2/,2.11
+2010,HDB 3-Room Flats,2.78
+2010,HDB 4-Room Flats,3.66
+2010,HDB 5-Room & Executive Flats,3.96
+2010,Condominiums & Other Apartments,3.41
+2010,Landed Properties,4.39
+2011,Total1/,3.51
+2011,HDB 1- & 2- Room Flats2/,2.24
+2011,HDB 3-Room Flats,2.77
+2011,HDB 4-Room Flats,3.65
+2011,HDB 5-Room & Executive Flats,3.99
+2011,Condominiums & Other Apartments,3.43
+2011,Landed Properties,4.38
+2012,Total1/,3.53
+2012,HDB 1- & 2- Room Flats2/,2.36
+2012,HDB 3-Room Flats,2.79
+2012,HDB 4-Room Flats,3.63
+2012,HDB 5-Room & Executive Flats,3.98
+2012,Condominiums & Other Apartments,3.48
+2012,Landed Properties,4.35
+2013,Total1/,3.47
+2013,HDB 1- & 2- Room Flats2/,2.38
+2013,HDB 3-Room Flats,2.74
+2013,HDB 4-Room Flats,3.58
+2013,HDB 5-Room & Executive Flats,3.94
+2013,Condominiums & Other Apartments,3.42
+2013,Landed Properties,4.33
+2014,Total1/,3.43
+2014,HDB 1- & 2- Room Flats2/,2.32
+2014,HDB 3-Room Flats,2.7
+2014,HDB 4-Room Flats,3.53
+2014,HDB 5-Room & Executive Flats,3.88
+2014,Condominiums & Other Apartments,3.4
+2014,Landed Properties,4.32
+2015,Total1/,3.39
+2015,HDB 1- & 2- Room Flats2/,2.24
+2015,HDB 3-Room Flats,2.69
+2015,HDB 4-Room Flats,3.49
+2015,HDB 5-Room & Executive Flats,3.89
+2015,Condominiums & Other Apartments,3.34
+2015,Landed Properties,4.3
+2016,Total1/,3.35
+2016,HDB 1- & 2- Room Flats2/,2.16
+2016,HDB 3-Room Flats,2.67
+2016,HDB 4-Room Flats,3.46
+2016,HDB 5-Room & Executive Flats,3.84
+2016,Condominiums & Other Apartments,3.3
+2016,Landed Properties,4.28
+2017,Total1/,3.3
+2017,HDB 1- & 2- Room Flats2/,2.19
+2017,HDB 3-Room Flats,2.63
+2017,HDB 4-Room Flats,3.42
+2017,HDB 5-Room & Executive Flats,3.77
+2017,Condominiums & Other Apartments,3.24
+2017,Landed Properties,4.29
+2018,Total1/,3.24
+2018,HDB 1- & 2- Room Flats2/,2.08
+2018,HDB 3-Room Flats,2.58
+2018,HDB 4-Room Flats,3.34
+2018,HDB 5-Room & Executive Flats,3.71
+2018,Condominiums & Other Apartments,3.26
+2018,Landed Properties,4.17
+2019,Total1/,3.16
+2019,HDB 1- & 2- Room Flats2/,2.02
+2019,HDB 3-Room Flats,2.5
+2019,HDB 4-Room Flats,3.22
+2019,HDB 5-Room & Executive Flats,3.58
+2019,Condominiums & Other Apartments,3.26
+2019,Landed Properties,4.24
+2020,Total1/,3.22
+2020,HDB 1- & 2- Room Flats2/,2.09
+2020,HDB 3-Room Flats,2.54
+2020,HDB 4-Room Flats,3.29
+2020,HDB 5-Room & Executive Flats,3.67
+2020,Condominiums & Other Apartments,3.29
+2020,Landed Properties,4.38
+2021,Total1/,3.15
+2021,HDB 1- & 2- Room Flats2/,2.01
+2021,HDB 3-Room Flats,2.48
+2021,HDB 4-Room Flats,3.27
+2021,HDB 5-Room & Executive Flats,3.63
+2021,Condominiums & Other Apartments,3.11
+2021,Landed Properties,4.2
+2022,Total1/,3.09
+2022,HDB 1- & 2- Room Flats2/,2.05
+2022,HDB 3-Room Flats,2.46
+2022,HDB 4-Room Flats,3.15
+2022,HDB 5-Room & Executive Flats,3.56
+2022,Condominiums & Other Apartments,3.11
+2022,Landed Properties,4.12
+2023,Total1/,3.11
+2023,HDB 1- & 2- Room Flats2/,1.99
+2023,HDB 3-Room Flats,2.49
+2023,HDB 4-Room Flats,3.17
+2023,HDB 5-Room & Executive Flats,3.6
+2023,Condominiums & Other Apartments,3.17
+2023,Landed Properties,4.07
+2024,Total1/,3.09
+2024,HDB 1- & 2- Room Flats2/,1.92
+2024,HDB 3-Room Flats,2.45
+2024,HDB 4-Room Flats,3.18
+2024,HDB 5-Room & Executive Flats,3.56
+2024,Condominiums & Other Apartments,3.14
+2024,Landed Properties,4.13
+2025,Total1/,3.06
+2025,HDB 1- & 2- Room Flats2/,1.92
+2025,HDB 3-Room Flats,2.43
+2025,HDB 4-Room Flats,3.16
+2025,HDB 5-Room & Executive Flats,3.48
+2025,Condominiums & Other Apartments,3.15
+2025,Landed Properties,4.13

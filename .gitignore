@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# raw downloads (large; scripts/fetch_data.py gets them again)
+data/raw/
+mutation/_work/
+# the Code of Practice is PUB's document: reference it, never commit it
+cop*.pdf
