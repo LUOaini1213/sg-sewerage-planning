@@ -86,7 +86,7 @@ def main() -> None:
         "planning_area": [[r1(x), r1(y)] for x, y in area_m.simplify(2.0).exterior.coords],
         "subzones": [{"name": s["name"], "code": s["code"], "rings": s["rings"]} for s in subzones],
         "parcels": {q["id"]: q["rings"] for q in parcels},
-    }, separators=(",", ":")) + "\n", encoding="utf-8")
+    }, separators=(",", ":")) + "\n", encoding="utf-8", newline="\n")
 
     # --- road graph ---------------------------------------------------------------------------------
     osm = json.loads((RAW / "osm_roads.json").read_text(encoding="utf-8"))
@@ -151,7 +151,7 @@ def main() -> None:
                   for e in kept_edges],
     }
     (OUT / "road_graph.json").write_text(json.dumps(graph, separators=(",", ":"), ensure_ascii=False) + "\n",
-                                         encoding="utf-8")
+                                         encoding="utf-8", newline="\n")
 
     # --- GeBIZ: PUB sewer-related awards ------------------------------------------------------------
     rows = []
